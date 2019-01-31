@@ -1,11 +1,12 @@
-title: c3-wolfram-face-swap
+title: Rock, Paper, Scissors
 hero_image: images/banner.png
-description: c3-wolfram-face-swap description
+description:
 version: 4
 listed: false
 copyedit: false
-last_tested: "2019-01-31"
+last_tested: "2018-12-06"
 steps:
-  - title: Introduction
-  - title: Step title
-  - title: What next?
+  - title: Finding Faces
+  - title: Basic Face Swap
+  - title: Making the Face Swap Look Better
+  - title: Completing your Face Swap
