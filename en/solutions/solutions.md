@@ -1,4 +1,4 @@
-![assign image to variable i](images/i equals.png)
+![assign image to variable i](images/iequals2.png)
 ```
 faceImages = FindFaces[i, "Image"];
 

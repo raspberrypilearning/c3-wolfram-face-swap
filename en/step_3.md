@@ -9,7 +9,7 @@ We can use the `ImageCompose` function to layer different images together. We wa
 
 If we put the background image `i`, and the images of the faces, `faceImages`, into `ImageCompose`, we can see that `ImageCompose` puts the new images right in the middle.
 
-![ImageCompose](images/imagecompose.png)
+![ImageCompose](images/imagecompose2.png)
 
 We need to use the `"Position"` data we found in the last step to tell `ImageCompose` where to put each image.
 
@@ -37,6 +37,6 @@ Use `ImageCompose`, `faceImages` and `facePositions` to swap the positions of th
 ImageCompose[i, {faceImages[[1]], faceImages[[2]]}, {facePositions[[2]], facePositions[[1]]}]
 ```
 
-![basic swap](images/basicswap.png)
+![basic swap](images/basicswap2.png)
 
 ---/task---

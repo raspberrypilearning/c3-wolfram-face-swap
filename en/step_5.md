@@ -12,7 +12,7 @@ Put `newFace1` and `newFace2` onto the original image in their swapped positions
 ```
 ImageCompose[i, {newFace1, newFace2}, {facePositions[[2]], facePositions[[1]]}]
 ```
-![Complete project](images/Complete.png)
+![Complete project](images/Complete2.png)
 
 ---/task ---
 
@@ -20,7 +20,7 @@ ImageCompose[i, {newFace1, newFace2}, {facePositions[[2]], facePositions[[1]]}]
 
 Pull all of your code together, and supress the output for each line (except for `ImageCompose`).
 
-![assign image to variable i](images/i equals.png)
+![assign image to variable i](images/iequals2.png)
 ```
 faceImages = FindFaces[i, "Image"];
 

@@ -5,7 +5,7 @@ In this project, you will create a mini-application which swaps the faces in pho
 ### What you will make
 
 --- print-only ---
-![Complete project](images/Complete.png)
+![Complete project](images/Complete2.png)
 --- /print-only ---
 
 --- collapse ---

@@ -6,12 +6,16 @@ You can work on any image which has two people, facing the camera, preferably at
 
 Here is an image to get us started.
 
-![original image](images/starting image.png)
+
+![original image](images/startingimage2.png)
 
 --- task ---
-Copy/Paste or drag and drop the image into your notebook. Assign it the variable name `i`. Use a `;` after the line of code to supress the output, so that you don't get a print out of the image every time you run the code.
 
-![assign image to variable i](images/i equals.png)
+Right click on the image and save it to your desktop. Drag the image from your desktop into your notebook. If you are using a desktop version of Wolfram, you can drag and drop the image straight into your notebook.
+
+Assign it the variable name `i`. Use a `;` after the line of code to supress the output, so that you don't get a print out of the image every time you run the code.
+
+![assign image to variable i](images/iequals2.png)
 
 --- /task ---
 
