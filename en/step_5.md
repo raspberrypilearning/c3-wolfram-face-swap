@@ -9,9 +9,30 @@ We still want to use the same `facePositions` we used in "Basic Face Swap".
 --- task ---
 Put `newFace1` and `newFace2` onto the original image in their swapped positions, using `ImageCompose`
 
+--- hints ---
+--- hint ---
+Remember that `ImageCompose` needs the images to use, and the positions at which it should place those images.
+
+```
+ImageCompose[i, {first face, second face}, {new position for first face, new position for second face}]
+```
+--- /hint ---
+--- hint ---
+This is how you used `ImageConpose` the last time:
+
+```
+ImageCompose[i, {faceImages[[1]], faceImages[[2]]}, {facePositions[[2]], facePositions[[1]]}]
+```
+--- /hint ---
+--- hint ---
+This is the finished code:
+
 ```
 ImageCompose[i, {newFace1, newFace2}, {facePositions[[2]], facePositions[[1]]}]
 ```
+--- /hint ---
+--- /hints ---
+
 ![Complete project](images/Complete2.png)
 
 ---/task ---
@@ -34,7 +55,6 @@ ImageCompose[i, {newFace1, newFace2}, {facePositions[[2]], facePositions[[1]]}]
   ```
 
 ---/task---
-
 
 Congratulations! You have created a face swap tool. Try replacing the image `i` with a different image (of two people, facing the camera), or even a photo of yourself and a friend.
 

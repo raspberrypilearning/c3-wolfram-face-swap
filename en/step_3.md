@@ -33,10 +33,25 @@ For example, if we have a list, then we can access the first item in the list by
 
 Use `ImageCompose`, `faceImages` and `facePositions` to swap the positions of the faces in the image `i`.
 
+--- hints ---
+--- hint ---
+Remember that ImageCompose needs the images to use, and the positions at which it should place those images.
+
+```
+ImageCompose[i, {first face, second face}, {new position for first face, new position for second face}]
+```
+--- /hint ---
+--- hint ---
+You need to reverse the positions of the images, so you need to take the first image and place it in the position of the second image and then take the second image and place it in the position of the first.
+--- /hint ---
+--- hint ---
+This is the code you'll need to use:
+
 ```
 ImageCompose[i, {faceImages[[1]], faceImages[[2]]}, {facePositions[[2]], facePositions[[1]]}]
 ```
+--- /hint ---
+--- /hints ---
 
 ![basic swap](images/basicswap2.png)
-
 ---/task---

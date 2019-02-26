@@ -27,16 +27,23 @@ We can now use `ImageResize` to change the size of each image.
 `ImageResize` takes two arguments: the image we want to resize, and the dimensions we want the image to be.
 
 ---task---
+Use `ImageResize` to change the size of each image to the size of the other image.
 
-Use `ImageResize` to change the size of each image in the list `faceImages` to the size of the other image in the list.
-
+--- hints ---
+--- hint ---
+You've got your images stored in `faceImages` and your image dimensions in your new `ImageDimensions` list.
+--- /hint ---
+--- hint ---
+You'll need to use the `ImageResize` function twice
+--- /hint ---
+--- hint ---
+Here's the code that will resize the images for you:
 ```
 ImageResize[faceImages[[1]], ImageDimensions[faceImages[[2]]]]
-```
-```
 ImageResize[faceImages[[2]], ImageDimensions[faceImages[[1]]]]
 ```
-
+--- /hint ---
+--- /hints ---
 ---/task---
 
 Now that we know how to swap the sizes of the images, we can use `ImageReflect` to change the direction that the face is turned. We can reflect both of the images to the left, so that they're facing opposite directions.
@@ -61,7 +68,7 @@ We also want to blur the edges of the face images, so that they don't have hard 
 
 We can do this by using the function `ImageEffect`, and the specification `"FadedFrame"`. We want to blur out the outer 1/4 of the image, so that it blends nicely, so we specify that we want `"Faded Frame"` to be `Scaled[1/4]`.
 
-`ImageEffect` takes two arguments, the image we want to change, and the way we want to change it. We can use a list, `{}`, to specify exactly what we want `ImageEffect` to do.
+`ImageEffect` takes two arguments: the image we want to change, and the way we want to change it. We can use a list, `{}`, to specify exactly what we want `ImageEffect` to do.
 
 --- task ---
 Blur the outer 1/4 of the image using `ImageEffect`, with the specification `"FadedFrame"`.

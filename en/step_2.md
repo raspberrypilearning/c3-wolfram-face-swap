@@ -1,5 +1,10 @@
 ## Finding Faces
 
+--- task ---
+If you have never used the Wolfram Language before, follow [this guide](https://projects.raspberrypi.org/en/projects/getting-started-with-mathematica) to get started and learn to use the tool. You'll need to look at **Starting Mathematica** and **Programming in Mathematica**.
+--- /task ---
+
+
 In this step, we will use inbuilt functions in the Wolfram Language to find faces in an image, and find information like the size and position of the faces.
 
 You can work on any image which has two people, facing the camera, preferably at roughly the same distance from the camera.
@@ -11,7 +16,7 @@ Here is an image to get us started.
 
 --- task ---
 
-Right click on the image and save it to your desktop. Drag the image from your desktop into your notebook. If you are using a desktop version of Wolfram, you can drag and drop the image straight into your notebook.
+Drag and drop the image straight into your notebook.
 
 Assign it the variable name `i`. Use a `;` after the line of code to supress the output, so that you don't get a print out of the image every time you run the code.
 
