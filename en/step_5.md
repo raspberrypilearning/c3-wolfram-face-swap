@@ -1,24 +1,24 @@
-## Completing your Face Swap
+## Complete your face swap
 
-Now that we have code which finds the faces in an image, swaps the sizes, reflects the direction, and blurs the edges, we need to put the new faces onto the original image.
+Now you have code that finds the faces in an image, swaps their sizes, reflects the direction, and blurs the edges. To finish, you need to place the new faces into the original image.
 
-In the "Basic Face Swap" step, we used `ImageCompose` to swap the images. We can do the same with our edited faces, using the new variables `newFace1` and `newFace2`.
+In the **Basic face swap** step, `ImageCompose` swaps the images. Now, usethe new variables `newFace1` and `newFace2` to do the same with the edited faces.
 
-We still want to use the same `facePositions` we used in "Basic Face Swap".
+Use the same `facePositions` from **Basic face swap**.
 
 --- task ---
-Put `newFace1` and `newFace2` onto the original image in their swapped positions, using `ImageCompose`
+Place `newFace1` and `newFace2` into the original image, in their swapped positions, using `ImageCompose`.
 
 --- hints ---
 --- hint ---
-Remember that `ImageCompose` needs the images to use, and the positions at which it should place those images.
+Remember that `ImageCompose` needs the images to use, and the positions where it should place those images.
 
 ```
 ImageCompose[i, {first face, second face}, {new position for first face, new position for second face}]
 ```
 --- /hint ---
 --- hint ---
-This is how you used `ImageConpose` the last time:
+This is how `ImageConpose` is used in the **Basic face swap** step:
 
 ```
 ImageCompose[i, {faceImages[[1]], faceImages[[2]]}, {facePositions[[2]], facePositions[[1]]}]
@@ -39,10 +39,13 @@ ImageCompose[i, {newFace1, newFace2}, {facePositions[[2]], facePositions[[1]]}]
 
 --- task ---
 
-Pull all of your code together, and supress the output for each line (except for `ImageCompose`).
+Pull all of your code together, and suppress the output for each line except for `ImageCompose`.
 
 ![assign image to variable i](images/iequals2.png)
 ```
+
+This is the finished program: 
+
 faceImages = FindFaces[i, "Image"];
 
 facePositions = FindFaces[i, "Position"];
@@ -56,6 +59,6 @@ ImageCompose[i, {newFace1, newFace2}, {facePositions[[2]], facePositions[[1]]}]
 
 ---/task---
 
-Congratulations! You have created a face swap tool. Try replacing the image `i` with a different image (of two people, facing the camera), or even a photo of yourself and a friend.
+Congratulations, you have created a face swap tool! Try it out by replacing the image `i` with a different image (of two people facing the camera), for example with a photo of yourself and a friend.
 
 

@@ -1,6 +1,6 @@
 ## Introduction
 
-In this project, you will create a mini-application which swaps the faces in photos with two people.
+In this project, you will create a mini application that swaps the faces in photos with two people.
 
 ### What you will make
 
@@ -12,11 +12,11 @@ title: What you will need
 ---
 ### Hardware
 
-+ A computer: desktop, laptop, or a Raspberry Pi
++ A computer (desktop, laptop, or Raspberry Pi)
 
 ### Software
 
-+ Wolfram Language — this is available for free on the Raspberry Pi as part of NOOBS
++ Wolfram Language, available for free on the Raspberry Pi as part of the official operating system, Raspbian
 
 --- /collapse ---
 
@@ -25,9 +25,10 @@ title: What you will need
 title: What you will learn
 ---
 
-+ Working with images in Wolfram
-+ Working with variables and lists in Wolfram
-+ Working with inbuilt functions in Wolfram
++ How to work with:
+    + Images in Wolfram
+    + Variables and lists in Wolfram
+    + Built-in functions in Wolfram
 
 --- /collapse ---
 
