@@ -1,34 +1,34 @@
-## Finding Faces
+## Find faces
 
 --- task ---
-If you have never used the Wolfram Language before, follow [this guide](https://projects.raspberrypi.org/en/projects/getting-started-with-mathematica) to get started and learn to use the tool. You'll need to look at **Starting Mathematica** and **Programming in Mathematica**.
+If you have never used the Wolfram Language before, follow [this guide to get started](https://projects.raspberrypi.org/en/projects/getting-started-with-mathematica) and learn to use the tool. Look at the sections **Starting Mathematica** and **Programming in Mathematica**.
 --- /task ---
 
+To start, you will use built-in functions of the Wolfram Language to:
++ Find faces in an image
++ Find information about these faces, e.g. their size and position
 
-In this step, we will use inbuilt functions in the Wolfram Language to find faces in an image, and find information like the size and position of the faces.
+You can work with any image of two people facing the camera. Ideally, the faces should be about the same distance from the camera.
 
-You can work on any image which has two people, facing the camera, preferably at roughly the same distance from the camera.
-
-Here is an image to get us started.
-
+Here is an image you can use:
 
 ![original image](images/startingimage2.png)
 
 --- task ---
 
-Drag and drop the image straight into your notebook.
+Drag and drop the image into your notebook.
 
-Assign it the variable name `i`. Use a `;` after the line of code to supress the output, so that you don't get a print out of the image every time you run the code.
+Assign it the variable name `i`. Put a `;` at the end of the line of code. Doing this suppresses the output, so you don't get a print-out of the image every time you run your code.
 
 ![assign image to variable i](images/iequals2.png)
 
 --- /task ---
 
-We use the function `FindFaces` to detect the faces in the image.
+The function `FindFaces` detects faces in images.
 
-We ask for exactly what we want the output of `FindFaces` to be by specifying a property of the `FindFaces` function.
+You specify a property of the `FindFaces` function to determine what the output of `FindFaces` is.
 
-`FindFaces` will always return a list of the faces it finds in the photo.
+`FindFaces` always returns a list of faces it finds in a photo.
 
 --- task ---
 
@@ -40,10 +40,13 @@ Assign the `"Image"` list to the variable name `faceImages`.
 faceImages = FindFaces[i, "Image"]
 ```
 
-Once you have looked at your output to check that it does what you are expecting, put a `;` after the line of code, to supress the output, so that you don't get a print out of the list of images every time you run the code.
+Check the output of this code to make sure it does what you expect.
+
+Then put a `;` at the end of the line of code to suppress the output.
+
 --- /task ---
 
-We also need to know where in the photo the faces are. We can do this using the property `"Position"`, which returns a list of the coordinates of each face in the photo.
+You also need to know where exactly in the photo the faces are. Using `FindFaces` with the property `"Position"`returns a list of the coordinates of each face in the photo.
 
 --- task ---
 
@@ -55,7 +58,9 @@ Assign the `"Position"` list to the variable name `facePositions`.
 facePositions = FindFaces[i, "Position"]
 ```
 
-Once you have looked at your output to check that it does what you are expecting, put a `;` after the line of code, to supress the output, so that you don't get a print out of the list of positions every time you run the code.
+Check the output of this code to make sure it does what you expect.
+
+Then put a `;` at the end of the line of code to suppress the output.
 ---/task---
 
 
