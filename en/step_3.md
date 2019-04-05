@@ -1,51 +1,53 @@
-## Basic Face Swap
+## Basic face swap
 
-We can use the `ImageCompose` function to layer different images together. We want the original image as the background, and then we want the faces to be pasted on top of the image in their new positions. Let's look at how `ImageCompose` works.
+The `ImageCompose` function layers different images. Here, you can use the original image as the background and place the faces on top, in their new positions.
 
 `ImageCompose` takes three arguments:
-+ the background image
-+ a list of images to put on top of the background
-+ a list of position coordinates which decide where each new image should go
+1. The background image
+1. A list of images to place on top of the background
+1. A list of position coordinates that determine where each new image goes
 
-If we put the background image `i`, and the images of the faces, `faceImages`, into `ImageCompose`, we can see that `ImageCompose` puts the new images right in the middle.
+If you put the background image, `i`, and the images of the faces, `faceImages`, into `ImageCompose`, the function places the two images right in the middle of the background.
 
 ![ImageCompose](images/imagecompose2.png)
 
-We need to use the `"Position"` data we found in the last step to tell `ImageCompose` where to put each image.
+You need to use the `"Position"` data to tell `ImageCompose` where to place the images. The first face should be placed at the location of the second face, and the second face should be pplaced  at the location of the first face.
 
-We want to put the first face at the location of the second face, and the second face at the location of the first place. In order to do this with `ImageCompose`, we'll need to fill in this information:
+So `ImageCompose` can do this, you need to fill in this information:
 
 ```
 ImageCompose[i, {first face, second face}, {new position for first face, new position for second face}]
 ```
-The new position for the first face will be the original position for the second face.
-The new position for the second face will be the original position for the first face.
 
-In order to extract this information from the lists `faceImages` and `facePositions`, we need to find specific parts of the lists.
++ The new position of the first face is the original position of the second face
++ The new position of the second face is the original position of the first face.
 
-We can do this using `[[]]`.
+To get this information from the lists `faceImages` and `facePositions`, you need to access specific items in the lists.
 
-For example, if we have a list, then we can access the first item in the list by using `list[[1]]`:
+You access a specific item in a list by using `[[]]`. For example, to access the first item in a list, you use `list[[1]]`:
 
 ![Parts of Lists](images/listpart.png)
 
 ---task---
 
-Use `ImageCompose`, `faceImages` and `facePositions` to swap the positions of the faces in the image `i`.
+Use `ImageCompose`, `faceImages`, and `facePositions` to swap the positions of the faces in the image `i`.
 
 --- hints ---
 --- hint ---
-Remember that ImageCompose needs the images to use, and the positions at which it should place those images.
+Remember that `ImageCompose` needs the images as well the positions at which to place the images.
 
 ```
 ImageCompose[i, {first face, second face}, {new position for first face, new position for second face}]
 ```
 --- /hint ---
 --- hint ---
-You need to reverse the positions of the images, so you need to take the first image and place it in the position of the second image and then take the second image and place it in the position of the first.
+You need to reverse the positions of the images.:
++ Take the first image and place it in the position of the second image
++ Take the second image and place it in the position of the first image
+
 --- /hint ---
 --- hint ---
-This is the code you'll need to use:
+This is the code you need:
 
 ```
 ImageCompose[i, {faceImages[[1]], faceImages[[2]]}, {facePositions[[2]], facePositions[[1]]}]
