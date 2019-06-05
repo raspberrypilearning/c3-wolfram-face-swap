@@ -16,7 +16,9 @@ title: What you will need
 
 ### Software
 
-+ Wolfram Language, available for free on the Raspberry Pi as part of the official operating system, Raspbian
+Either:
++ Wolfram Language on Mathematica, available for free on the Raspberry Pi as part of the official operating system, Raspbian
++ Wolfram Language on Wolfram Cloud, available [free on your browser](https://open.wolframcloud.com/app/view/newNotebook)
 
 --- /collapse ---
 
