@@ -16,7 +16,12 @@ Here is an image you can use:
 
 --- task ---
 
-Drag and drop the image into your notebook.
+If you are using your browser you can import the image directly using
+```
+i = CloudGet["https://www.wolframcloud.com/objects/RasPi/Faces"]
+```
+
+If you are using Mathematica, drag and drop the image into your notebook.
 
 Assign it the variable name `i`. Put a `;` at the end of the line of code. Doing this suppresses the output, so you don't get a print-out of the image every time you run your code.
 
