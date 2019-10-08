@@ -63,10 +63,10 @@ Change the direction that the face is turned using `ImageReflect`.
 Within the code for `ImageReflect`, include your code for changing the image size. This makes the code change the image's size and reflect the image at the same time.
 
 ```
-ImageReflect[ImageResize[faceImages[[1]], ImageDimensions[faceImages[[2]]], Left]
+ImageReflect[ImageResize[faceImages[[1]], ImageDimensions[faceImages[[2]]]], Left]
 ```
 ```
-ImageReflect[ImageResize[faceImages[[2]], ImageDimensions[faceImages[[1]]], Left]
+ImageReflect[ImageResize[faceImages[[2]], ImageDimensions[faceImages[[1]]]], Left]
 
 ```
 ---/task ---
@@ -90,10 +90,10 @@ Blur the outer 1/4 of the image using `ImageEffect` with the specification `"Fad
 You can use this code:
 
 ```
-newFace1 = ImageEffect[ImageReflect[ImageResize[faceImages[[1]], ImageDimensions[faceImages[[2]]], Left], {"FadedFrame", Scaled[1/4]}]
+newFace1 = ImageEffect[ImageReflect[ImageResize[faceImages[[1]], ImageDimensions[faceImages[[2]]]], Left], {"FadedFrame", Scaled[1/4]}]
 ```
 ```
-newFace2 = ImageEffect[ImageReflect[ImageResize[faceImages[[2]], ImageDimensions[faceImages[[1]]], Left], {"FadedFrame", Scaled[1/4]}]
+newFace2 = ImageEffect[ImageReflect[ImageResize[faceImages[[2]], ImageDimensions[faceImages[[1]]]], Left], {"FadedFrame", Scaled[1/4]}]
 
 ```
 
