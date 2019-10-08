@@ -16,11 +16,18 @@ Here is an image you can use:
 
 --- task ---
 
+### If you are using Mathematica 
 Drag and drop the image into your notebook.
 
 Assign it the variable name `i`. Put a `;` at the end of the line of code. Doing this suppresses the output, so you don't get a print-out of the image every time you run your code.
 
 ![assign image to variable i](images/iequals2.png)
+
+### If you are using Wolfram Cloud in your browser
+Import the image directly and assign it the variable name `i` using this code:
+```
+i = CloudGet["https://www.wolframcloud.com/objects/RasPi/Faces"];
+```
 
 --- /task ---
 

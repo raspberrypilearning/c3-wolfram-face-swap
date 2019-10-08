@@ -10,13 +10,19 @@ In this project, you will create a mini application that swaps the faces in phot
 ---
 title: What you will need
 ---
+
 ### Hardware
 
 + A computer (desktop, laptop, or Raspberry Pi)
 
-### Software
 
-+ Wolfram Language, available for free on the Raspberry Pi as part of the official operating system, Raspbian
+### Software
+You can use either:
+
++ Wolfram Language on Mathematica, available for free on the Raspberry Pi as part of the official operating system, Raspbian
++ Wolfram Language on Wolfram Cloud, available [free in your browser](https://open.wolframcloud.com/app/view/newNotebook)
+
+If you use Wolfram Cloud, don't forget to download your work or create an account to save it.
 
 --- /collapse ---
 
