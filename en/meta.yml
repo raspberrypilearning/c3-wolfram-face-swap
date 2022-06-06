@@ -1,16 +1,18 @@
 ---
 title: Face swap
 hero_image: images/banner.png
-description:
+description: 
 version: 4
 listed: true
 copyedit: true
 last_tested: '2018-12-06'
 steps:
 - title: Introduction
-  completion: engaged
 - title: Find faces
 - title: Basic face swap
+  completion:
+  - engaged
 - title: Make the face swap look better
-  completion: internal
 - title: Complete your face swap
+  completion:
+  - internal
